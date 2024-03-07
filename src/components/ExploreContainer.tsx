@@ -1,13 +1,19 @@
 import './ExploreContainer.css';
-
+import React from 'react';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
 interface ContainerProps { }
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
-    <div id="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    </div>
+    <IonCard>
+      <img alt="Silhouette of mountains" src="f3f8472218e9abd8320ee22f5574db6e.jpg" />
+      <IonCardHeader>
+        <IonCardTitle>Balendeza!!!!</IonCardTitle>
+        <IonCardSubtitle>Talk to me my love</IonCardSubtitle>
+      </IonCardHeader>
+
+      <IonCardContent>i come to serve you my master!</IonCardContent>
+    </IonCard>
   );
 };
 
